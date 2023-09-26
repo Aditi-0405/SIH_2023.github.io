@@ -1,0 +1,251 @@
+body, input, button {
+  margin: 0;
+  padding: 0;
+}
+.accordion{
+    max-width: 500px;
+   
+}
+.mb-3{
+    margin-left: 40px;
+    margin-right: 20px;
+   
+}
+.accordion-button{
+    color: red;
+    
+  
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* text-align: center; */
+    margin-right: 0px;
+    margin-right: 0px;
+
+  }
+
+
+  .agency_emer {
+   
+    display: flex;
+   justify-content: center;
+    
+  }
+  .solved_cases{
+    color: green;
+  }
+.modal-body{
+
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.agency_resources{
+  width: 100%;
+  height: 500px;
+  overflow: scroll;
+}
+.modal-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.provide_assis{
+
+ margin-left: 0px;
+ color: azure;
+ width: 100%;
+ padding-bottom: 10px;
+ 
+}
+.mb-3_1{
+  margin-left: 0px;
+  margin-right: 0px;
+  width:20rem;
+  padding: 20px;
+  color: black;
+  font-weight: 700;
+  
+}
+.confirm_bttn{
+  margin-right: 0px;
+}
+.provide_assis_bttn{
+  background-color: green;
+}
+.header{
+  margin-bottom: 40px;
+  color: blue;
+}
+.modal-title{
+  color: red;
+}
+
+.accordion-header{
+  color: aqua;
+  width:100%;
+}
+
+.child1 {
+  
+  /* justify-content: center;
+  text-align: center; */
+  overflow-y: scroll;
+  max-height: 600px;
+  width: 100%;
+  /* max-width: 600px; */
+
+
+}
+.child2 {
+  /* flex:35%; */
+  overflow-y: scroll;
+  max-height: 600px;
+  width: 100%;
+  /* max-width: 600px; */
+  
+ 
+}
+.child3{
+  flex: 30%;
+
+}
+.highlight{
+  color: blue;
+  font-weight: 400px;
+}
+.card-img-top{
+  width:250px;
+
+}
+.highlight_green{
+  color:green;
+  font-weight: 400px;
+
+}
+.container-fluid_home_page{
+  margin-right: 0px;
+}
+
+.circular-logo {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #007BFF, #00FFD8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+  margin-left: 30px;
+}
+
+.circular-text {
+  font-family: Arial, sans-serif;
+  font-size: 18px; 
+  font-weight: bold;
+  color: #fff; 
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+}
+.container-fluid{
+  background-color:#add8e6;
+}
+.section1{
+  margin-top: 100px;
+}
+
+
+
+.center-searchbar {
+  text-align: center;
+
+  padding: 20px 0;
+}
+
+
+.center-searchbar input[type="text"] {
+  /* width: 00px;  */
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 20px; 
+  outline: none; 
+}
+
+
+.center-searchbar button {
+  background-color: #007BFF; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; 
+  cursor: pointer;
+}
+
+.center-searchbar button:hover {
+  background-color: #0056b3; 
+}
+.section2{
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  color: #0056b3;
+}
+.card-img-top{
+  width: 200px;
+  height: 150px;
+}
+.contacts{
+  margin-top: 6px;
+}
+.container{
+  margin-top: 40px;
+}
+.accordion-header{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.emr_public{
+  
+}
+.report_emergency{
+  /* background-color: red; */
+  color: red;
+  text-align: center;
+  justify-content: center;
+}
+.emer_buttn{
+ 
+  background-color: red;
+}
+
+
+/* Default style for larger screens (flex-row) */
+
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    margin-right: 0px;
+    margin-right: 0px;
+
+  }
+}
+
+
+
+
+
+
+
