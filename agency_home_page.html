@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOCUMENT</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+</head>
+
+<body>
+
+
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <div class="circular-logo">
+        <div class="circular-text">
+          RescueHub
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Agency Profile</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="section1">
+    <header>
+      <div class="center-searchbar">
+        <input type="text" id="search" placeholder="Search...">
+        <button type="button">Search</button>
+      </div>
+    </header>
+    <!-- Button trigger modal -->
+    <header>
+      <div class="report_emergency">
+        <button type="button " class="btn btn-primary emer_buttn" data-bs-toggle="modal" data-bs-target="#exampleModalOne">
+          Report an Emergency
+        </button>
+      </div>
+
+
+    </header>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Report an Emergency</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+              data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 agency_resources"
+              tabindex="0">
+
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Issue</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Location</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">District</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">City</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">State</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Assistance Required</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Primary Phone Number</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Secondary Phone Number</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+              </div>
+              <div class="col-12 mb-3 report_button">
+                <button class="btn btn-primary" type="submit">Report</button>
+              </div>
+
+
+
+
+            </div>
+
+
+            <!-- <div class="provide_help">provide help</div>  -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+
+    <!-- <div class="box1"> -->
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 child1" tabindex="0">
+      <h4 class="header">Emergencies Reported by Rescue Agencies</h4>
+      <div class="accordion accordion-flush rescue_agency_reports" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Fire Rescue Agency | Fire Outbreak | 890, Sunflower Society,
+              Malviya Nagar, Adjacent to Green Park,
+              South Delhi District,
+              New Delhi,
+              Delhi,
+              India
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse agency_emer"
+            data-bs-parent="#accordionFlushExample">
+            <div class="card" style="width: 18rem;">
+              <!-- <img src="./images/rescue_agency_logo.jpg" class="card-img-top" alt="..."> -->
+              <div class="card-body">
+                <p><span class="highlight">Emergency:</span><br> Fire Outbreak</p>
+
+                <p><span class="highlight">Situation:</span><br> There is a big fire in a really tall building in the
+                  city. The fire is spreading fast,
+                  and people in the building are in danger. We need help quickly to put out the fire and get people
+                  out safely.</p>
+                <p><span class="highlight">Assistance Required:</span><br>
+                <ul>
+                  <li>Fire Engines: 8 fire engines equipped with hoses and water.</li>
+                  <li>Firefighters: 20 trained firefighters with protective gear.</li>
+                  <li>Ladder Trucks: 3 ladder trucks for reaching higher floors of the factory.</li>
+                  <li>Water Tanks: 2 water tanks for a continuous water supply.</li>
+                  <li>Ambulances: 2 ambulances with medical teams for treating injuries.</li>
+                  <li>Respirator Masks: 30 masks to protect from smoke inhalation.</li>
+                  <li>Evacuation Vehicles: 5 trucks for transporting people to safety.</li>
+                  <li>First Aid Supplies: 100 first aid kits for treating burns and injuries.</li>
+                </ul>
+                </p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Help
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Fire Outbreak</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                          data-bs-smooth-scroll="true"
+                          class="scrollspy-example bg-body-tertiary p-3 rounded-2 agency_resources" tabindex="0">
+                          <h4 class="header">Assistance Provided So Far</h4>
+                          <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Rapid Response Relief (RRR)
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p><span class="highlight">Assistance Provided:</span><br>
+                                  <ul>
+                                    <li>5 fire engines with trained firefighters.</li>
+                                    <li>3 aerial ladder trucks for reaching high-rise buildings.</li>
+                                    <li>2 water tankers for a continuous water supply.</li>
+                                  </ul>
+                                  </p>
+                                  <p><span class="highlight">Timings:</span><br>
+                                    By 5 P.M , 30 september, 2023</p>
+                                  <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  High-Rise Fire Evacuation Unit (HRFEU)
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p><span class="highlight">Assistance Provided:</span><br>
+                                  <ul>
+                                    <li>5 fire engines with trained firefighters.</li>
+                                    <li>3 aerial ladder trucks for reaching high-rise buildings.</li>
+                                    <li>2 water tankers for a continuous water supply.</li>
+                                  </ul>
+                                  </p>
+                                  <p><span class="highlight">Timings:</span><br>
+                                    By 4 P.M , 30 september, 2023</p>
+                                  <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                </div>
+                              </div>
+                            </div>
+
+
+
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  Rapid Fire Response Team (RFRT)
+                                </button>
+                              </h2>
+                              <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <p><span class="highlight">Assistance Provided:</span><br>
+                                  <ul>
+                                    <li>5 fire engines with trained firefighters.</li>
+                                    <li>3 aerial ladder trucks for reaching high-rise buildings.</li>
+                                    <li>2 water tankers for a continuous water supply.</li>
+                                  </ul>
+                                  </p>
+                                  <p><span class="highlight">Timings:</span><br>
+                                    By 4 P.M , 30 september, 2023</p>
+                                  <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                </div>
+                              </div>
+                            </div>
+
+
+                          </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                          <div class="accordion" id="accordionExample">
+
+                            <div class="accordion-item provide_assis">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed provide_assis_bttn" type="button"
+                                  data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                  aria-controls="collapseSix">
+                                  Provide Assistance
+                                </button>
+                              </h2>
+                              <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+
+                                <div class="mb-3 mb-3_1">
+                                  <label for="exampleFormControlTextarea1" class="form-label">Assistance</label>
+                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3 mb-3_1">
+                                  <label for="exampleFormControlTextarea1" class="form-label">Primary Phone
+                                    Number</label>
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-3 mb-3_1">
+                                  <label for="exampleFormControlTextarea1" class="form-label">Secondary Phone
+                                    Number</label>
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="mb-3 mb-3_1">
+                                  <label for="exampleFormControlTextarea1" class="form-label">Timing Details</label>
+                                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                </div>
+                                <div class="col-12 mb-3 report_button">
+                                  <button class="btn btn-primary confirm_bttn" type="submit">Confirm</button>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                        </div>
+
+                        <!-- <div class="provide_help">provide help</div>  -->
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                PetPaws Animal Rescue (PAR) | Flood Rescue | 789, Jasmine Villa,
+                Shantinagar, Behind Vidyapith School,
+                South Bangalore District,
+                Bangalore,
+                Karnataka,
+                India
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse agency_emer"
+              data-bs-parent="#accordionFlushExample">
+              <div class="card" style="width: 18rem;">
+                <!-- <img src="./images/rescue_agency_logo.jpg" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <p><span class="highlight">Emergency:</span><br> Flood Evacuation</p>
+
+                  <p><span class="highlight">Situation:</span><br> A devastating flood has struck our community, leaving
+                    many pets stranded and in need of rescue. AnimalSafe Pet Rescue (ASPR) is working tirelessly t
+                    o ensure the safety and well-being of these beloved animals during this flood evacuation crisis.</p>
+                  <p><span class="highlight">Assistance Required:</span><br>
+                  <ul>
+                    <li>Animal Rescue Teams: 10 teams of trained animal handlers and rescuers.</li>
+                    <li>Transport Vehicles: 5 vans equipped for safe pet transportation.</li>
+                    <li>Cages and Carriers: 50 cages and carriers for sheltering and transporting pets.</li>
+                    <li>Emergency Pet Food: 500 units of pet food to sustain animals in crisis.</li>
+                    <li>Medical Kits for Pets: 20 first aid kits for treating injured animals.</li>
+                    <li>Water Bowls: 100 water bowls to provide clean drinking water for pets.</li>
+                    <li>Identification Tags: 200 pet identification tags for reuniting pets with owners.</li>
+                    <li>Blankets and Bedding: 50 blankets and bedding for pet comfort.</li>
+                  </ul>
+
+                  </p>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalOne">
+                    Help
+                  </button>
+
+                  <!-- Modal -->
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalOne" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Fire Outbreak</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                            data-bs-smooth-scroll="true"
+                            class="scrollspy-example bg-body-tertiary p-3 rounded-2 agency_resources" tabindex="0">
+                            <h4 class="header">Assistance Provided So Far</h4>
+                            <div class="accordion" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    PawSavers Pet Assistance
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                  data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p><span class="highlight">Assistance Provided:</span><br>
+                                    <ul>
+                                      <li>8 mobile animal rescue teams trained in handling distressed pets and wildlife.
+                                      </li>
+                                      <li>4 animal ambulances equipped with medical supplies for injured animals.</li>
+                                      <li>2 veterinary units staffed with experienced veterinarians for medical care.
+                                      </li>
+                                      <li>10 temporary animal shelters with food and water for displaced animals.</li>
+                                      <li>24/7 hotline for reporting and responding to animal rescue emergencies.</li>
+                                    </ul>
+
+                                    </p>
+                                    <p><span class="highlight">Timings:</span><br>
+                                      By 5 P.M , 30 september, 2023</p>
+                                    <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    FurGuard Animal Rescue
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p><span class="highlight">Assistance Provided:</span><br>
+                                    <ul>
+                                      <li>8 mobile animal rescue teams trained in handling distressed pets and wildlife.
+                                      </li>
+                                      <li>4 animal ambulances equipped with medical supplies for injured animals.</li>
+                                      <li>2 veterinary units staffed with experienced veterinarians for medical care.
+                                      </li>
+                                      <li>10 temporary animal shelters with food and water for displaced animals.</li>
+                                      <li>24/7 hotline for reporting and responding to animal rescue emergencies.</li>
+                                    </ul>
+
+                                    </p>
+                                    <p><span class="highlight">Timings:</span><br>
+                                      By 4 P.M , 30 september, 2023</p>
+                                    <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    PetSafe Haven Rescue
+                                  </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p><span class="highlight">Assistance Provided:</span><br>
+                                    <ul>
+                                      <li>8 mobile animal rescue teams trained in handling distressed pets and wildlife.
+                                      </li>
+                                      <li>4 animal ambulances equipped with medical supplies for injured animals.</li>
+                                      <li>2 veterinary units staffed with experienced veterinarians for medical care.
+                                      </li>
+                                      <li>10 temporary animal shelters with food and water for displaced animals.</li>
+                                      <li>24/7 hotline for reporting and responding to animal rescue emergencies.</li>
+                                    </ul>
+
+                                    </p>
+                                    <p><span class="highlight">Timings:</span><br>
+                                      By 4 P.M , 30 september, 2023</p>
+                                    <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                            </div>
+
+
+                          </div>
+                          <div class="modal-footer">
+                            <div class="accordion" id="accordionExample">
+
+                              <div class="accordion-item provide_assis">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed provide_assis_bttn" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    Provide Assistance
+                                  </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample">
+
+                                  <div class="mb-3 mb-3_1">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Assistance</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  </div>
+                                  <div class="mb-3 mb-3_1">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Primary Phone
+                                      Number</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                      placeholder="">
+                                  </div>
+                                  <div class="mb-3 mb-3_1">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Secondary Phone
+                                      Number</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                      placeholder="">
+                                  </div>
+                                  <div class="mb-3 mb-3_1">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Timing Details</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                      placeholder="">
+                                  </div>
+                                  <div class="col-12 mb-3 report_button">
+                                    <button class="btn btn-primary confirm_bttn" type="submit">Confirm</button>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                            </div>
+
+
+                          </div>
+
+                          <!-- <div class="provide_help">provide help</div>  -->
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Urban Crisis Response Unit (UCRU) | Citywide Flooding | 456, Silver Oak Residency,
+                Tulsi Nagar, Near Gokul Park,
+                Dharampeth District,
+                Nagpur City,
+                Maharashtra,
+                India
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse agency_emer"
+              data-bs-parent="#accordionFlushExample">
+              <div class="card" style="width: 18rem;">
+                <!-- <img src="./images/rescue_agency2_logo.jpg" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <p><span class="highlight">Emergency:</span><br>Citywide Flooding</p>
+
+                  <p><span class="highlight">Situation:</span><br> Our city is facing an unprecedented crisis as
+                    torrential rains have caused widespread flooding, submerging streets and homes.
+                    The Urban Crisis Response Unit (UCRU) is tirelessly working to provide aid and support during this
+                    citywide flooding emergency.</p>
+                  <p><span class="highlight">Assistance Required:</span><br>
+                  <ul>
+                    <li>Water Rescue Teams: 8 teams of trained water rescue experts.</li>
+                    <li>Boats and Watercraft: 10 boats and watercraft for navigating flooded areas.</li>
+                    <li>Evacuation Vehicles: 5 trucks for evacuating people from danger zones.</li>
+                    <li>Medical Teams: 15 doctors and 20 nurses for providing medical assistance.</li>
+                    <li>Shelter Tents: 30 tents for temporary shelter for displaced residents.</li>
+                    <li>Food and Water: 2,000 meals and 5,000 gallons of clean drinking water for those affected.</li>
+                    <li>Communication Equipment: 10 satellite phones for maintaining communication in areas with
+                      disrupted infrastructure.</li>
+                    <li>First Aid Supplies: 200 first aid kits for treating injuries.</li>
+                  </ul>
+                  </p>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalThree">
+                    Help
+                  </button>
+
+                  <!-- Modal -->
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalThree" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Fire Outbreak</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                            data-bs-smooth-scroll="true"
+                            class="scrollspy-example bg-body-tertiary p-3 rounded-2 agency_resources" tabindex="0">
+                            <h4 class="header">Assistance Provided So Far</h4>
+                            <div class="accordion" id="accordionExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    RescueRapid Emergency Response (RERR)
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                  data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p><span class="highlight">Assistance Provided:</span><br>
+                                    <ul>
+                                      <li>10 urban search and rescue teams trained in responding to various crises.</li>
+                                      <li>5 emergency response vehicles equipped with specialized equipment.</li>
+                                      <li>3 medical response teams with doctors and paramedics for immediate care.</li>
+                                      <li>20 temporary shelters with provisions for displaced residents.</li>
+                                      <li>24/7 emergency hotline for reporting and coordinating response efforts.</li>
+                                    </ul>
+
+                                    </p>
+                                    <p><span class="highlight">Timings:</span><br>
+                                      By 5 P.M , 30 september, 2023</p>
+                                    <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Community Crisis Aid Team (CCAT)
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p><span class="highlight">Assistance Provided:</span><br>
+                                    <ul>
+                                      <li>10 urban search and rescue teams trained in responding to various crises.</li>
+                                      <li>5 emergency response vehicles equipped with specialized equipment.</li>
+                                      <li>3 medical response teams with doctors and paramedics for immediate care.</li>
+                                      <li>20 temporary shelters with provisions for displaced residents.</li>
+                                      <li>24/7 emergency hotline for reporting and coordinating response efforts.</li>
+                                    </ul>
+
+                                    </p>
+                                    <p><span class="highlight">Timings:</span><br>
+                                      By 4 P.M , 30 september, 2023</p>
+                                    <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                  </div>
+                                </div>
+                              </div>
+
+
+
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    CitySafe Emergency Support (CSES)
+                                  </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <p><span class="highlight">Assistance Provided:</span><br>
+                                    <ul>
+                                      <li>10 urban search and rescue teams trained in responding to various crises.</li>
+                                      <li>5 emergency response vehicles equipped with specialized equipment.</li>
+                                      <li>3 medical response teams with doctors and paramedics for immediate care.</li>
+                                      <li>20 temporary shelters with provisions for displaced residents.</li>
+                                      <li>24/7 emergency hotline for reporting and coordinating response efforts.</li>
+                                    </ul>
+
+                                    </p>
+                                    <p><span class="highlight">Timings:</span><br>
+                                      By 4 P.M , 30 september, 2023</p>
+                                    <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                            </div>
+
+
+                          </div>
+                          <div class="modal-footer">
+                            <div class="accordion" id="accordionExample">
+
+                              <div class="accordion-item provide_assis">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed provide_assis_bttn" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                    aria-controls="collapseSix">
+                                    Provide Assistance
+                                  </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionExample">
+
+                                  <div class="mb-3 mb-3_1">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Assistance</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  </div>
+                                  <div class="mb-3 mb-3_1">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Primary Phone
+                                      Number</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                      placeholder="">
+                                  </div>
+                                  <div class="mb-3 mb-3_1">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Secondary Phone
+                                      Number</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                      placeholder="">
+                                  </div>
+                                  <div class="mb-3 mb-3_1">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Timing Details</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                      placeholder="">
+                                  </div>
+                                  <div class="col-12 mb-3 report_button">
+                                    <button class="btn btn-primary confirm_bttn" type="submit">Confirm</button>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                            </div>
+
+
+                          </div>
+
+                          <!-- <div class="provide_help">provide help</div>  -->
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 child2" tabindex="0">
+      <h4 class="header">Emergencies Reported by Public</h4>
+      <div class="accordion accordion-flush emr_public" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+              Chemical Spill in Industrial Area | 567, Blue Skies Enclave,
+              Jayanagar, Beside Royal Mall,
+              Rangareddy District,
+              Hyderabad,
+              Telangana,
+              India
+            </button>
+          </h2>
+          <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+            <div class="accordion-body">
+              <p><span class="highlight">Emergency:</span><br>Chemical Spill in Industrial Area</p>
+              <p><span class="highlight">Situation:</span><br>There's a chemical spill near the industrial area.
+                It's emitting toxic fumes, and there's a risk to nearby residents. Hazmat team needed!</p>
+              <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+              Flash Flooding in Our Neighborhood | 234, Hillview Apartments,
+              Civil Lines, Near Model Town Park,
+              Ludhiana District,
+              Ludhiana,
+              Punjab,
+              India
+            </button>
+          </h2>
+          <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p><span class="highlight">Emergency:</span><br>Flash Flooding in Our Neighborhood</p>
+              <p><span class="highlight">Situation:</span><br>Our neighborhood is flooding rapidly due to heavy rain.
+                Water levels are rising fast, and some houses are at risk. We need help!</p>
+              <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+              Medical Emergency at Shopping Mall | Silver Oak Shopping Mall,
+              Tulsi Nagar, Near Gokul Park,
+              Dharampeth District,
+              Nagpur,
+              Maharashtra,
+              India
+            </button>
+          </h2>
+          <div id="flush-collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p><span class="highlight">Emergency:</span><br>Medical Emergency at Shopping Mall</p>
+              <p><span class="highlight">Situation:</span><br>There's a medical emergency at the shopping mall.
+                Someone has collapsed and needs immediate medical attention. Send an ambulance!</p>
+              <p><span class="highlight_green">Contacts:</span><br>9355745465<br>6344766478</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--     
+    <div class="accordion child3" id="accordionExample">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Report an Emergency
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Issue</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Location</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">State</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">City</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">District</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Assistance Required</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Primary Phone Number</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Secondary Phone Number</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+          </div>
+          <div class="col-12 mb-3 report_button">
+            <button class="btn btn-primary" type="submit">Report</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>  -->
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="browser.js"></script>
+</body>
+</body>
+
+</html>
